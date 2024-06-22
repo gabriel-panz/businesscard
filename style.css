@@ -37,7 +37,7 @@ label {
 
 .center {
   margin: auto;
-  width: 50%;
+  width: 30%;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -63,9 +63,9 @@ label {
 
 #faux-caret {
   color: transparent;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #faux-caret > span {
   position: absolute;
