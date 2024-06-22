@@ -42,8 +42,8 @@
             </li>
           </ul>
 
-          <!-- <form action="https://www.google.com/search">
-            <label for="q">panz@dev:/google$</label>
+          <form id="search-form" action="https://www.google.com/search">
+            <label for="q">panz@dev:~$</label>
             <div>
               <input
                 id="faux-stdin"
@@ -52,7 +52,7 @@
                 placeholder="look me up"
               />
             </div>
-          </form> -->
+          </form>
         </span>
       </article>
     </main>
@@ -121,6 +121,10 @@
         margin-top: -16px;
       }
 
+      #search-form {
+        display: flex;
+      }
+
       @keyframes blink {
         from,
         to {
@@ -145,24 +149,26 @@
       //     document.getElementById("faux-caret").outerHTML =
       //       getCaret(currentPosRem);
       //   });
-    //   const getCaret = (txt) =>
-    //     `<div id="faux-caret" style="margin-left: 0px">${txt}<span>a</span></div>`;
+      const getCaret = (txt) =>
+        `<div id="faux-caret" style="margin-left: 3px">${txt}<span>a</span></div>`;
 
-    //   document.getElementById("faux-stdin").outerHTML += getCaret("");
+      const adjustCaret = (e) => {
+        const selectedPos = e.target.selectionStart;
+        if (selectedPos < 19) {
+          const currentPosRem = "a".repeat(selectedPos);
+          document.getElementById("faux-caret").outerHTML =
+            getCaret(currentPosRem);
+        }
+      };
+      document.getElementById("faux-stdin").outerHTML += getCaret("");
 
-    //   document.getElementById("faux-stdin").addEventListener("keyup", (e) => {
-    //     const selectedPos = e.target.selectionStart;
-    //     let currentPosRem = "a".repeat(selectedPos);
-    //     document.getElementById("faux-caret").outerHTML =
-    //       getCaret(currentPosRem);
-    //   });
+      document
+        .getElementById("faux-stdin")
+        .addEventListener("keyup", adjustCaret);
 
-    //   document.getElementById("faux-stdin").addEventListener("click", (e) => {
-    //     const selectedPos = e.target.selectionStart;
-    //     let currentPosRem = "a".repeat(selectedPos);
-    //     document.getElementById("faux-caret").outerHTML =
-    //       getCaret(currentPosRem);
-    //   });
-    // </script>
+      document
+        .getElementById("faux-stdin")
+        .addEventListener("click", adjustCaret);
+    </script>
   </body>
 </html>
