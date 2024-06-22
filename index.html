@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Panzenhagen</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
     <main>
       <article class="center">
         <span>
-          <h1 style="margin-bottom: 8px">Gabriel Panzenhagen (v1.0)</h1>
-          <h3 style="margin-top: 0">~/Web/Developer</h3>
+          <h4 style="margin-bottom: 8px">Gabriel Panzenhagen (v1.0)</h4>
+          <p style="margin-top: 0">~/Web/Developer</p>
           <ul>
             <li>
               Email
@@ -56,119 +55,6 @@
         </span>
       </article>
     </main>
-    <footer></footer>
-    <style>
-      * {
-        font-family: Inconsolata, monospace;
-        font-size: 1rem;
-      }
-      body {
-        background-color: #000f0a;
-        color: #dee5e5;
-      }
-      a {
-        color: #17b3b3;
-      }
-      a:active {
-        color: #0f7575;
-      }
-
-      ul {
-        list-style: none;
-        align-items: start;
-        padding: 0;
-      }
-
-      .center {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .title {
-        display: flex;
-        margin: 0;
-        flex-direction: column;
-        align-items: left;
-        justify-content: space-between;
-      }
-
-      #faux-stdin {
-        background: #000f0a;
-        color: #dee5e5;
-        border: none;
-      }
-      #faux-stdin:focus {
-        outline: none;
-        caret-color: transparent;
-      }
-
-      #faux-caret {
-        color: transparent;
-        -webkit-user-select: none; /* Safari */
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
-      }
-      #faux-caret > span {
-        position: absolute;
-        z-index: 1;
-        animation: blink 1s step-end infinite;
-        border-color: #dee5e5;
-        border-bottom: solid;
-        color: transparent;
-        margin-top: -16px;
-      }
-
-      #search-form {
-        display: flex;
-      }
-
-      @keyframes blink {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: #dee5e5;
-        }
-      }
-    </style>
-    <script>
-      //   let startPosRem = 2;
-      //   let currentPosRem = startPosRem;
-      //   const getCaret = (pos) =>
-      //     `<div id="faux-caret" style="padding-left: ${pos}rem"><span>a</span></div>`;
-
-      //   document.getElementById("faux-stdin").outerHTML += getCaret(startPosRem);
-
-      //   document.getElementById("faux-stdin").addEventListener("keyup", (e) => {
-      //     const selectedPos = e.target.selectionStart;
-      //     currentPosRem = startPosRem + selectedPos;
-      //     document.getElementById("faux-caret").outerHTML =
-      //       getCaret(currentPosRem);
-      //   });
-      const getCaret = (txt) =>
-        `<div id="faux-caret" style="margin-left: 3px">${txt}<span>a</span></div>`;
-
-      const adjustCaret = (e) => {
-        const selectedPos = e.target.selectionStart;
-        if (selectedPos < 19) {
-          const currentPosRem = "a".repeat(selectedPos);
-          document.getElementById("faux-caret").outerHTML =
-            getCaret(currentPosRem);
-        }
-      };
-      document.getElementById("faux-stdin").outerHTML += getCaret("");
-
-      document
-        .getElementById("faux-stdin")
-        .addEventListener("keyup", adjustCaret);
-
-      document
-        .getElementById("faux-stdin")
-        .addEventListener("click", adjustCaret);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
