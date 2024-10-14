@@ -2,13 +2,16 @@
   font-family: Inconsolata, monospace;
   font-size: 1rem;
 }
+
 body {
   background-color: #000f0a;
   color: #dee5e5;
 }
+
 a {
   color: #17b3b3;
 }
+
 a:active {
   color: #0f7575;
 }
@@ -35,20 +38,18 @@ label {
   padding-right: 0.5rem;
 }
 
+.title {
+  margin-bottom: 8px;
+}
+
 .center {
   margin: auto;
-  width: 30%;
+  width: 40%;
+  min-width: 300px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.title {
-  display: flex;
-  margin: 0;
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-between;
 }
 
 #faux-stdin {
@@ -56,6 +57,7 @@ label {
   color: #dee5e5;
   border: none;
 }
+
 #faux-stdin:focus {
   outline: none;
   caret-color: transparent;
@@ -67,7 +69,8 @@ label {
   -ms-user-select: none;
   user-select: none;
 }
-#faux-caret > span {
+
+#faux-caret>span {
   position: absolute;
   z-index: 1;
   animation: blink 1s step-end infinite;
@@ -81,11 +84,18 @@ label {
   display: flex;
 }
 
+.portfolioCard p {
+  margin: 4px 0;
+  display: flex;
+}
+
 @keyframes blink {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #dee5e5;
   }

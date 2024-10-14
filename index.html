@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel Panzenhagen</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- só um efeito visual simples, nada demais -->
-    <!-- pontos bônus se você descobrir um dos bugs visuais -->
-    <main>
-      <article class="center">
-        <span>
-          <h4 style="margin-bottom: 8px">Gabriel Panzenhagen (v1.0)</h4>
-          <p style="margin-top: 0">~/Web/Developer</p>
-          <p>
-            I'm a Software Engineer who has worked in Web Development for more
-            than 3 years. I've done some back-end and full-stack work,
-            developing and deploying solutions for a variety of clients, mainly
-            using C# and React which I consider to be my strongest skills.
-          </p>
-          <p>Check out my personal projects, or contact me here:</p>
-          <ul>
-            <li>
-              Email
-              <a
-                href="mailto:contato@panz.dev.br"
-                rel="noreferer noopener"
-                >contato@panz.dev.br</a
-              >
-            </li>
-            <li>
-              LinkedIn
-              <a
-                href="https://linkedin.com/in/panz"
-                target="_blank"
-                rel="noreferer"
-                >/in/panz</a
-              >
-            </li>
-            <li>
-              GitHub
-              <a
-                href="https://github.com/gabriel-panz/"
-                target="_blank"
-                rel="noreferer"
-                >/gabriel-panz/</a
-              >
-            </li>
-          </ul>
 
-          <form id="search-form" action="https://www.google.com/search">
-            <label for="q">panz@dev:~$</label>
-            <div>
-              <input
-                id="faux-stdin"
-                type="search"
-                name="q"
-                placeholder="look me up"
-              />
-            </div>
-          </form>
-        </span>
-      </article>
-    </main>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" lang="en">
+  <meta name="author" content="Gabriel Panzenhagen">
+  <title>Gabriel Panzenhagen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- só um efeito visual simples, nada demais -->
+  <!-- pontos bônus se você descobrir um dos bugs visuais -->
+  <main>
+    <article class="center">
+      <span>
+        <h4 class="title">Gabriel Panzenhagen (v1.0)</h4>
+        <p style="margin-top: 0">~/Web/Developer</p>
+        <p>
+          I'm a Software Engineer who has worked in Web Development for more
+          than 3 years. I've done some back-end and full-stack work,
+          developing and deploying solutions for a variety of clients, mainly
+          using C# and React which I consider to be my strongest skills.
+        </p>
+        <p>Check out my personal projects, or contact me here:</p>
+        <ul>
+          <li>
+            Email
+            <a href="mailto:contato@panz.dev.br" rel="noreferer noopener">contato@panz.dev.br</a>
+          </li>
+          <li>
+            LinkedIn
+            <a href="https://linkedin.com/in/panz" target="_blank" rel="noreferer">/in/panz</a>
+          </li>
+          <li>
+            GitHub
+            <a href="https://github.com/gabriel-panz/" target="_blank" rel="noreferer">/gabriel-panz/</a>
+          </li>
+        </ul>
+        <form id="search-form" action="https://www.google.com/search">
+          <label for="q">panz@dev:~$</label>
+          <div>
+            <input id="faux-stdin" type="search" name="q" placeholder="google me" />
+          </div>
+        </form>
+      </span>
+    </article>
+    <article class="center">
+      <span>
+        <h4 class="title">Projects</h4>
+        <ul>
+          <li>
+            <article class="portfolioCard">
+              <p class="title"><strong>Roll My Dice</strong></p>
+              <p><strong>Links:</strong>
+                [<a href="https://roll.mydice.click" target="_blank" rel="noreferer">website</a>,
+                <a href="https://github.com/gabriel-panz/roll-mydice">repo</a>]
+              </p>
+              <p>For Tabletop RPG enthusiasts.
+                Built in React and deployed in an S3 bucket
+                as a static website.
+              </p>
+              <details>
+                <summary>Read more</summary>
+                <p>Easy solution for requesting dice rolls from your friends. Effortlessly
+                  setup a dice formula and share it with one click. Anyone who clicks the shared link will automatically
+                  roll the prepared formula.</p>
+              </details>
+            </article>
+          </li>
+        </ul>
+      </span>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>
