@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #000f0a;
+  background-color: #020202;
   color: #dee5e5;
 }
 
@@ -53,7 +53,7 @@ label {
 }
 
 #faux-stdin {
-  background: #000f0a;
+  background: #020202;
   color: #dee5e5;
   border: none;
 }
