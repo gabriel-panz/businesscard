@@ -1,4 +1,4 @@
-import Fuse from "https://unpkg.com/fuse.js@7.3.0/dist/fuse.basic.min.mjs"
+import Fuse from "https://unpkg.com/fuse.js@7.3.0/dist/fuse.min.mjs"
 /// faux terminal input visuals
 const getCaret = (px) =>
 	`<div id="faux-caret" style="margin-left: ${px}px"><span>a</span></div>`;
@@ -40,7 +40,12 @@ for (const p of projs) {
 	})
 }
 
-const fuse = new Fuse(dat, { keys: ['title', 'content'], includeScore: true, threshold: 0.2 })
+const fuse = new Fuse(dat, {
+	keys: ['title', 'content'],
+	includeScore: true,
+	threshold: 0.2,
+	useExtendedSearch: true
+})
 
 document.getElementById('faux-stdin').addEventListener("keyup", (ev) => {
 	const result = fuse.search(ev.target.value)
