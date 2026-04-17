@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +7,10 @@
     content="Full-stack web engineer, with solid real worlds experience. If you need a landing page, or web application, or need some work done on any web service, contact me."
     lang="en">
   <meta name="author" content="Gabriel Panzenhagen">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8287283739667766"
-     crossorigin="anonymous"></script>
+		<script src="./fuse.min.cjs"></script>
   <title>Gabriel Panzenhagen</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <!-- só um efeito visual simples, nada demais -->
   <!-- pontos bônus se você descobrir um dos bugs visuais -->
@@ -24,7 +21,7 @@
         <p style="margin-top: 0">~/Web/Developer</p>
         <p>
           I'm a Software Engineer who has worked in Web Development for more
-          than 4 years. I've done some back-end and full-stack work,
+          than 5 years. I've done some back-end and full-stack work,
           developing and deploying solutions for a variety of clients, mainly
           using C# and React which I consider to be my strongest skills.
         </p>
@@ -43,24 +40,26 @@
             <a href="https://github.com/gabriel-panz/" target="_blank" rel="noreferer">/gabriel-panz/</a>
           </li>
         </ul>
-        <form id="search-form" action="https://www.google.com/search">
+        <div id="search-box">
           <label for="q">panz@dev:~$</label>
           <div>
-            <input id="faux-stdin" type="search" name="q" placeholder="google me" />
+            <input id="faux-stdin" type="search" name="q" placeholder="search my portfolio" />
           </div>
-        </form>
+        </div>
       </span>
     </article>
     <article class="center">
-      <span>
         <h4 class="title">Projects</h4>
-        <ul>
+					<ul id="project-list">
           <li>
-            <article class="portfolioCard">
-              <p class="title"><strong>Magic Inspiration</strong></p>
+            <article id="mtg-plot-gen" class="portfolioCard">
+              <h2 class="title" >Magic Inspiration</h2>
               <p><strong>Links:</strong>
                 [<a href="https://plot.panz.dev.br" target="_blank" rel="noreferer">website</a>,
                 <a href="https://github.com/gabriel-panz/mtg-plot-gen">repo</a>]
+              </p>
+              <p><strong>Stack:</strong>
+                [NextJs, Cloudflare(Workers, D1)]
               </p>
               <p>For Tabletop RPG enthusiasts.
                 Built in Next and deployed in Cloudflare
@@ -73,25 +72,50 @@
             </article>
           </li>
           <li>
-            <article class="portfolioCard">
-              <p class="title"><strong>Dockshare</strong></p>
+            <article id="dockshare" class="portfolioCard">
+              <h2 class="title">Dockshare</h2>
               <p><strong>Links:</strong>
                 [<a href="https://dockshare.app/" target="_blank" rel="noreferer">website</a>]
+              </p>
+              <p><strong>Stack:</strong>
+                [jQuery, ".Net 8", Azure(App, Functions, Queue, SQL)]
               </p>
               <p>
                 Dock renting platform that connects boaters with private dock owners, who wish to make an extra income while securely renting their property.
               </p>
               <details>
                 <summary>Read more</summary>
-                <p>This is a client's project that I maintain and work on new features for. Really cool project with stripe, some APIs and a lot of jQuery. Pretty cool to check out if you live in the U.S.</p>
+                <p>
+									This is a client's project that I maintain and work on new features for. Really cool project with stripe, some APIs and a lot of jQuery.
+									Pretty cool to check out if you live in the US and love boating.
+								</p>
+              </details>
+            </article>
+          </li>
+          <li>
+            <article id="podoquirospa" class="portfolioCard">
+              <h2 class="title">PodoQuiroSpa</h2>
+              <p><strong>Links:</strong>
+                [<a href="https://podoquirospa.com.br/" target="_blank" rel="noreferer">website</a>]
+              </p>
+              <p><strong>Stack:</strong>
+                [NextJs, Cloudflare(Workers, D1, R2)]
+              </p>
+              <p>
+									Professional website for a Podology clinic and spa.
+              </p>
+              <details>
+                <summary>Read more</summary>
+                <p>
+									The client's clinic had a website hosted on Wix. I remade the website, with the help of a UI/UX designer.
+									This is just a standard professional website, made to be fast, eyecatching and responsive.
+								</p>
               </details>
             </article>
           </li>
         </ul>
-      </span>
     </article>
   </main>
   <script src="script.js"></script>
 </body>
-
 </html>

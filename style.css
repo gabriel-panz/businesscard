@@ -45,7 +45,7 @@ label {
 .center {
   margin: auto;
   width: 40%;
-  min-width: 300px;
+  min-width: 33lvw;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -80,17 +80,24 @@ label {
   margin-top: -16px;
 }
 
-#search-form {
+#search-box {
   display: flex;
 }
 
+.portfolioCard {
+	width: 40lvw;
+  margin: 16px 0;
+}
 .portfolioCard p {
   margin: 4px 0;
   display: flex;
 }
+.portfolioCard h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
 
 @keyframes blink {
-
   from,
   to {
     border-color: transparent;
