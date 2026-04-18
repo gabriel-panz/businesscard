@@ -16,8 +16,17 @@ a:active {
   color: #0f7575;
 }
 
-h4 {
+h1 {
   font-size: 24px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: bold;
 }
 
 p,
@@ -92,10 +101,6 @@ label {
   margin: 4px 0;
   display: flex;
 }
-.portfolioCard h2 {
-	font-size: 20px;
-	font-weight: bold;
-}
 
 @keyframes blink {
   from,
@@ -108,9 +113,21 @@ label {
   }
 }
 
-@media (max-width: 1200px) {
-  h4 {
+@media (max-width: 900px) {
+	.portfolioCard {
+		width: 100%;
+	}
+	.center {
+		width: 80lvw;
+	}
+  h1 {
     font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 18px;
   }
 
   p,

@@ -1,120 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Full-stack web engineer, with solid real worlds experience. If you need a landing page, or web application, or need some work done on any web service, contact me."
-    lang="en">
-  <meta name="author" content="Gabriel Panzenhagen">
-  <title>Gabriel Panzenhagen</title>
-  <link rel="stylesheet" href="style.css" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description"
+		content="Full-stack web engineer, with solid real worlds experience. If you need a landing page, or web application, or need some work done on any web service, contact me."
+		lang="en">
+	<meta name="author" content="Gabriel Panzenhagen">
+	<title>Gabriel Panzenhagen</title>
+	<link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- só um efeito visual simples, nada demais -->
-  <!-- pontos bônus se você descobrir um dos bugs visuais -->
-  <main>
-    <article class="center">
-      <span>
-        <h4 class="title">Gabriel Panzenhagen (v1.0)</h4>
-        <p style="margin-top: 0">~/Web/Developer</p>
-        <p>
-          I'm a Software Engineer who has worked in Web Development for more
-          than 5 years. I've done some back-end and full-stack work,
-          developing and deploying solutions for a variety of clients, mainly
-          using C# and React which I consider to be my strongest skills.
-        </p>
-        <p>Check out my personal projects, or contact me here:</p>
-        <ul>
-          <li>
-            Email
-            <a href="mailto:gabriel.panzenhagen@gmail.com" rel="noreferer noopener">gabriel.panzenhagen@gmail.com</a>
-          </li>
-          <li>
-            LinkedIn
-            <a href="https://linkedin.com/in/panz" target="_blank" rel="noreferer">/in/panz</a>
-          </li>
-          <li>
-            GitHub
-            <a href="https://github.com/gabriel-panz/" target="_blank" rel="noreferer">/gabriel-panz/</a>
-          </li>
-        </ul>
-        <div id="search-box">
-          <label for="q">panz@dev:~$</label>
-          <div>
-            <input id="faux-stdin" type="search" name="q" placeholder="search my portfolio" />
-          </div>
-        </div>
-      </span>
-    </article>
-    <article class="center">
-        <h4 class="title">Projects</h4>
-					<ul id="project-list">
-          <li>
-            <article id="mtg-plot-gen" class="portfolioCard">
-              <h2 class="title" >Magic Inspiration</h2>
-              <p><strong>Links:</strong>
-                [<a href="https://plot.panz.dev.br" target="_blank" rel="noreferer">website</a>,
-                <a href="https://github.com/gabriel-panz/mtg-plot-gen">repo</a>]
-              </p>
-              <p><strong>Stack:</strong>
-                [NextJs, Cloudflare(Workers, D1)]
-              </p>
-              <p>For Tabletop RPG enthusiasts.
-                Built in Next and deployed in Cloudflare
-                as a static website.
-              </p>
-              <details>
-                <summary>Read more</summary>
-                <p>This is a personal project of mine, utilizing common full-stack tools and features such as internationalization, server rendering, react, SQL databases, etc. It doubles as a demo of my skills and a useful tool for Game Masters. Check it out.</p>
-              </details>
-            </article>
-          </li>
-          <li>
-            <article id="dockshare" class="portfolioCard">
-              <h2 class="title">Dockshare</h2>
-              <p><strong>Links:</strong>
-                [<a href="https://dockshare.app/" target="_blank" rel="noreferer">website</a>]
-              </p>
-              <p><strong>Stack:</strong>
-                [jQuery, ".Net 8", Azure(App, Functions, Queue, SQL)]
-              </p>
-              <p>
-                Dock renting platform that connects boaters with private dock owners, who wish to make an extra income while securely renting their property.
-              </p>
-              <details>
-                <summary>Read more</summary>
-                <p>
-									This is a client's project that I maintain and work on new features for. Really cool project with stripe, some APIs and a lot of jQuery.
-									Pretty cool to check out if you live in the US and love boating.
-								</p>
-              </details>
-            </article>
-          </li>
-          <li>
-            <article id="podoquirospa" class="portfolioCard">
-              <h2 class="title">PodoQuiroSpa</h2>
-              <p><strong>Links:</strong>
-                [<a href="https://podoquirospa.com.br/" target="_blank" rel="noreferer">website</a>]
-              </p>
-              <p><strong>Stack:</strong>
-                [NextJs, Cloudflare(Workers, D1, R2)]
-              </p>
-              <p>
-									Professional website for a Podology clinic and spa.
-              </p>
-              <details>
-                <summary>Read more</summary>
-                <p>
-									The client's clinic had a website hosted on Wix. I remade the website, with the help of a UI/UX designer.
-									This is just a standard professional website, made to be fast, eyecatching and responsive.
-								</p>
-              </details>
-            </article>
-          </li>
-        </ul>
-    </article>
-  </main>
-  <script type="module" src="script.mjs"></script>
+	<!-- só um efeito visual simples, nada demais -->
+	<!-- pontos bônus se você descobrir um dos bugs visuais -->
+	<main>
+		<section id="about" class="center">
+			<span>
+				<h1 class="title" style="margin-bottom: 0">Gabriel Panzenhagen</h1>
+				<p style="margin-top: 0; color: grey;">~/Web/Developer</p>
+				<p>
+					I'm a Software Engineer who has worked in Web Development for more
+					than 5 years. I've done some back-end and full-stack work,
+					developing and deploying solutions for a variety of clients, mainly
+					using C# and React which I consider to be my strongest skills.
+				</p>
+				<p>Check out my personal projects, or contact me here:</p>
+				<ul>
+					<li>
+						Email
+						<a href="mailto:gabriel.panzenhagen@gmail.com" rel="noreferer noopener">gabriel.panzenhagen@gmail.com</a>
+					</li>
+					<li>
+						LinkedIn
+						<a href="https://linkedin.com/in/panz" target="_blank" rel="noreferer">/in/panz</a>
+					</li>
+					<li>
+						GitHub
+						<a href="https://github.com/gabriel-panz/" target="_blank" rel="noreferer">/gabriel-panz/</a>
+					</li>
+				</ul>
+				<div id="search-box">
+					<label for="q">panz@dev:~$</label>
+					<div>
+						<input id="faux-stdin" type="search" name="q" placeholder="search my portfolio" />
+					</div>
+				</div>
+			</span>
+		</section>
+		<section id="portfolio" class="center">
+			<h2 class="title">Projects</h2>
+			<ul id="project-list">
+				<li>
+					<article id="mtg-plot-gen" class="portfolioCard">
+						<h3 class="title">Magic Inspiration</h3>
+						<p><strong>Links:</strong>
+							[<a href="https://plot.panz.dev.br" target="_blank" rel="noreferer">website</a>,
+							<a href="https://github.com/gabriel-panz/mtg-plot-gen">repo</a>]
+						</p>
+						<p><strong>Stack:</strong>
+							[NextJs, Cloudflare(Workers, D1)]
+						</p>
+						<p>For Tabletop RPG enthusiasts.
+							Built in Next and deployed in Cloudflare
+							as a static website.
+						</p>
+						<details>
+							<summary>Read more</summary>
+							<p>This is a personal project of mine, utilizing common full-stack tools and features such as
+								internationalization, server rendering, react, SQL databases, etc. It doubles as a demo of my skills and
+								a useful tool for Game Masters. Check it out.</p>
+						</details>
+					</article>
+				</li>
+				<li>
+					<article id="dockshare" class="portfolioCard">
+						<h3 class="title">Dockshare</h3>
+						<p><strong>Links:</strong>
+							[<a href="https://dockshare.app/" target="_blank" rel="noreferer">website</a>]
+						</p>
+						<p><strong>Stack:</strong>
+							[jQuery, ".Net 8", Azure(App, Functions, Queue, SQL)]
+						</p>
+						<p>
+							Dock renting platform that connects boaters with private dock owners, who wish to make an extra income
+							while securely renting their property.
+						</p>
+						<details>
+							<summary>Read more</summary>
+							<p>
+								This is a client's project that I maintain and work on new features for. Really cool project with
+								stripe, some APIs and a lot of jQuery.
+								Pretty cool to check out if you live in the US and love boating.
+							</p>
+						</details>
+					</article>
+				</li>
+				<li>
+					<article id="podoquirospa" class="portfolioCard">
+						<h3 class="title">PodoQuiroSpa</h3>
+						<p><strong>Links:</strong>
+							[<a href="https://podoquirospa.com.br/" target="_blank" rel="noreferer">website</a>]
+						</p>
+						<p><strong>Stack:</strong>
+							[NextJs, Cloudflare(Workers, D1, R2)]
+						</p>
+						<p>
+							Professional website for a Podology clinic and spa.
+						</p>
+						<details>
+							<summary>Read more</summary>
+							<p>
+								The client's clinic had a website hosted on Wix. I remade the website, with the help of a UI/UX
+								designer.
+								This is just a standard professional website, made to be fast, eyecatching and responsive.
+							</p>
+						</details>
+					</article>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<script type="module" src="script.mjs"></script>
 </body>
+
 </html>
